@@ -12855,6 +12855,26 @@ header.masthead .h1 {
   box-shadow: 1px 1px 4px rgba(180, 180, 180, 1);
 }
 
+.scroll-x {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #35393ec2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c4c6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c3c4c6;
+}
+
 @media (max-width: 768px) {
   .port-pic {
     object-fit: cover;
