@@ -12855,10 +12855,6 @@ header.masthead .h1 {
   box-shadow: 1px 1px 4px rgba(180, 180, 180, 1);
 }
 
-.scroll-x {
-  overflow-y: auto;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
