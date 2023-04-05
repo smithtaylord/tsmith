@@ -12847,10 +12847,19 @@ header.masthead .h1 {
 .port-pic {
   object-fit: cover;
   object-position: top;
-  height: 30vh;
+  height: 50vh;
   width: 100%;
 }
 
 .box-shadow {
   box-shadow: 1px 1px 4px rgba(180, 180, 180, 1);
+}
+
+@media (max-width: 768px) {
+  .port-pic {
+    object-fit: cover;
+    object-position: top;
+    height: 30vh;
+    width: 100%;
+  }
 }
