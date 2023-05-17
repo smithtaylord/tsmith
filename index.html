@@ -24,8 +24,25 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
 
-<body id="page-top">
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug" id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -146,7 +163,7 @@
     </section>
     <!-- Portfolio-->
     <div id="portfolio">
-        <div class="container-fluid p-0 m-0">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12 m-auto">
                     <h2 class="text-center mt-5">Portfolio</h2>
@@ -162,7 +179,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 m-auto">
                             <div class="p-2 ps-md-3">
                                 <a class="portfolio-box rounded box-shadow" href="https://keepr-cka7.onrender.com"
                                     title="Keepr" target="_blank">
@@ -209,7 +226,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 m-auto">
                             <div class="p-2 pe-md-3">
                                 <a class="portfolio-box rounded box-shadow" href="https://pageturn-book.onrender.com"
                                     title=" PageTurn.book" target="_blank">
@@ -254,7 +271,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 m-auto">
                             <div class="p-2 ps-md-3">
                                 <a class="portfolio-box rounded box-shadow"
                                     href="https://smithtaylord.github.io/Jammming/" title="Jammming" target="_blank">
@@ -293,7 +310,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 m-auto">
                             <div class="p-2 pe-md-3">
                                 <a class="portfolio-box rounded box-shadow"
                                     href="https://the-tower-project-2023.onrender.com" title="Tower" target="_blank">
@@ -401,7 +418,7 @@
                     <a class="btn btn-light fs-2" href="https://www.linkedin.com/in/smithtaylord/" target="_blank"><i
                             class="bi bi-linkedin" title="linkedIn"></i>
                     </a>
-                    <a class="btn btn-light fs-2" href="https://github.com/smithtaylord" target="_blank"><i
+                    <a class="btn btn-light fs-2 mx-2" href="https://github.com/smithtaylord" target="_blank"><i
                             class="bi bi-github" title="github"></i>
                     </a>
                     <a class="btn btn-light fs-2" href="mailto:Smith.TaylorD@gmail.com"><i class="bi bi-envelope"
